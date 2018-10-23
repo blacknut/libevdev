@@ -1,0 +1,18 @@
+cc_library_shared {
+    name: "libevdev",
+
+    export_include_dirs: [
+        "include",
+        "libevdev",
+    ],
+
+    local_include_dirs: [
+        "libevdev",
+    ],
+
+    srcs: [
+        "libevdev/libevdev.c",
+        "libevdev/libevdev-names.c",
+        "libevdev/libevdev-uinput.c",
+    ],
+}
